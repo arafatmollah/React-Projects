@@ -4,7 +4,9 @@ function App() {
   const [color, setColor] = useState("black");
   return (
     <div className="flex flex-col">
-      <p className="text-green-300 text-center">Hello</p>
+      <h3 className="text-center text-cyan-950 text-xl my-10">
+        Background Color Changer
+      </h3>
       <div
         className="h-44 w-40 mx-auto mt-5 border-slate-800"
         style={{ backgroundColor: color }}
@@ -45,7 +47,7 @@ function App() {
         </button>
         <button
           onClick={() => setColor("blue")}
-          className="bg-blue-900 px-7 py-3 rounded-lg mx-2"
+          className="bg-blue-700 px-7 py-3 rounded-lg mx-2"
         >
           Blue
         </button>
